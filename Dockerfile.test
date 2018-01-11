@@ -28,7 +28,7 @@ RUN curl -O -q http://downloads.typesafe.com/scala/2.11.5/scala-2.11.5.deb && \
     rm scala-2.11.5.deb
 
 # Gulp, bower
-RUN npm install -g gulp bower
+RUN git config --global url."https://".insteadOf git:// && npm install -g gulp bower
 
 # Dirs
 RUN mkdir /source
