@@ -6,7 +6,7 @@ node("cd") {
     def registryIpPort = "10.100.198.200:5000"
     def swarmPlaybook = "swarm.yml"
     def proxyPlaybook = "swarm-proxy.yml"
-    def instances = 1
+    def instances = 3
 
     def flow = load "/data/scripts/workflow-util.groovy"
 
